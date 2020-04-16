@@ -1,0 +1,44 @@
+{
+  "name": "bristol-fashion",
+  "version": "0.0.1",
+  "description": "Ship shape and Bristol fashion",
+  "author": {
+    "name": "Max McKenzie",
+    "email": "hello@seam.es"
+  },
+  "scripts": {
+    "build-docs": "build-storybook --docs",
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@storybook/addon-a11y": "^5.3.8",
+    "@storybook/addon-actions": "^5.3.8",
+    "@storybook/addon-docs": "^5.3.8",
+    "@storybook/addon-essentials": "^5.3.8",
+    "@storybook/addon-storysource": "^5.3.8",
+    "@storybook/react": "^5.3.8",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "sort-package-json": "^1.21.0",
+    "storybook-addon-deps": "^1.0.9"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  }
+}
