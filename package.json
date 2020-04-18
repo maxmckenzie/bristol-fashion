@@ -40,5 +40,10 @@
   "engines": {
     "node": ">=8",
     "npm": ">=5"
+  },
+  "dependencies": {
+    "less-loader": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
   }
 }
