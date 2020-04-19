@@ -1,16 +1,24 @@
-import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
 
-import './typography.scss'
+import './typography.less'
 
 <Meta title="1. Docs/Typography" />
 
 # Typography
 
 <Preview>
-  <h1>Lorem ipsum dolor</h1>
-  <h2>Lorem ipsum dolor</h2>
-  <h3>Lorem ipsum dolor</h3>
-  <h4>Lorem ipsum dolor</h4>
-  <h5>Lorem ipsum dolor</h5>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur autem fuga temporibus aut, vel aliquam molestias ipsa vitae, facilis cum corporis debitis ducimus obcaecati necessitatibus eaque, dolor facere quos rem.</p>
+  <Story name="Type Scale">
+    <div>
+      <h1>Lorem ipsum dolor</h1>
+      <h2>Lorem ipsum dolor</h2>
+      <h3>Lorem ipsum dolor</h3>
+      <h4>Lorem ipsum dolor</h4>
+      <h5>Lorem ipsum dolor</h5>
+      <p>Body</p>
+      <span class="textSmall">Small text</span><br/>
+      <caption>Caption</caption>
+    </div>
+  </Story>
 </Preview>
+
+# Usage 

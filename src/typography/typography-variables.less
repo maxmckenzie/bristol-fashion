@@ -1,40 +1,7 @@
-.typeScale(@type-scaling: 0, @height-scaling: 1) {
-  font-size: pow(@scaling-factor, @type-scaling) * @base-font-size;
-  line-height: @base-line-height * @height-scaling;
+:root {
+  font-size: 16px;
 }
 
-.h1 {
-  .typeScale(6, 2);
-}
-
-.h2 {
-  .typeScale(5, 2);
-}
-
-.h3 {
-  .typeScale(4, 1.8);
-}
-
-.h4 {
-  .typeScale(3, 1.5);
-}
-
-.h5 {
-  .typeScale(2, 1.5);
-}
-
-.h6 {
-  .typeScale(1, 1.3);
-}
-
-.text {
-  .typeScale(0, 1.2);
-}
-
-.textSmall {
-  .typeScale(-1, 1.05);
-}
-
-.textTiny {
-  .typeScale(-2, 1);
-}
+@base-font-size: 1rem;
+@base-font-ratio: 1.25; // major second
+@type-margin: 0;

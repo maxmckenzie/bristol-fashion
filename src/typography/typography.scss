@@ -2,29 +2,43 @@
 @import './typography-functions.scss';
 
 h1 {
-  @include typeScale(6, 2);
+  margin: $type-margin;
+  @include typeScale(5);
 }
 
 h2 {
-  @include typeScale(5, 2);
+  margin: $type-margin;
+  @include typeScale(4);
 }
 
 h3 {
-  @include typeScale(4, 1.8);
+  margin: $type-margin;
+  @include typeScale(3);
 }
 
 h4 {
-  @include typeScale(3, 1.5);
+  margin: $type-margin;
+  @include typeScale(2);
 }
 
 h5 {
-  @include typeScale(2, 1.5);
+  margin: $type-margin;
+  @include typeScale(1);
 }
 
-h6 {
-  @include typeScale(1, 1.3);
+p,
+.text {
+  margin: $type-margin;
+  @include typeScale(0);
 }
 
-p {
-  @include typeScale(0, 1.2);
+.textSmall {
+  margin: $type-margin;
+  @include typeScale(-1);
+}
+
+.textTiny, 
+caption {
+  margin: $type-margin;
+  @include typeScale(-2);
 }

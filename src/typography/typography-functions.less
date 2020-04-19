@@ -1,0 +1,5 @@
+.typeScale(@scale) {
+  @font-scale: if((@scale < 0), @base-font-size / @base-font-ratio, @base-font-size * @scale);
+  font-size:  @font-scale;
+  line-height: @font-scale * @base-font-ratio;
+}

@@ -1,20 +1,9 @@
-@function pow($number, $exponent) {
-  $value: 1;
-
-  @if $exponent > 0 {
-    @for $i from 1 through $exponent {
-      $value: $value * $number;
-    }
-  } @else if $exponent < 0 {
-    @for $i from 1 through -$exponent {
-      $value: $value / $number;
-    }
+@mixin typeScale($type-scale: 0) {
+  @if $type-scale > 0 {  
+    $font-scale: $base-font-size * $type-scale;
+  } else {
+    $font-scale: $base-font-size / $base-font-ratio;
   }
-
-  @return $value;
-}
-
-@mixin typeScale($type-scaling: 0, $height-scaling: 1) {
-  font-size: pow($scaling-factor, $type-scaling) * $base-font-size;
-  line-height: $base-line-height * $height-scaling;
+  font-size: $font-scale;
+  line-height: $font-scale * $base-font-ratio;
 }
