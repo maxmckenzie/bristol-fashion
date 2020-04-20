@@ -1,0 +1,62 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="1. Docs/Examples" />
+
+# Example css using the Bristol CDN
+
+```
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://bristol-fashion.now.sh/styles.css');
+
+* {
+  box-sizing: border-box; // if you want it
+}
+
+:root {
+  --color-brand-primary:rgb(233,30,99);
+  --color-brand-secondary:rgb(156,39,176);
+
+  /* maybe you have 3 brand color tones which you can add */
+  --color-brand-primary-100:rgb(248,187,208);
+  --color-brand-primary-500:rgb(233,30,99);
+  --color-brand-primary-900:rgb(136,14,79);
+
+  /* any other custom vars you would like */
+  --grid-gutter: 1rem;
+  --border-radius: 0.25rem;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--color-neutral--900); // off black
+}
+
+/* No components are included so you need to declaire your own */
+
+.card,
+.card.card-depth-0 {
+  background-color: var(--color-neutral--100); // off white
+  padding: var(--grid-gutter);
+  border-radius: --border-radius;
+}
+
+.card.card-depth-1 {
+  box-shadow: var(--shadow-1);
+}
+
+.card.card-depth-2 {
+  box-shadow: var(--shadow-2);
+}
+
+.card.card-depth-3 {
+  box-shadow: var(--shadow-3);
+}
+
+.card.card-depth-4 {
+  box-shadow: var(--shadow-4);
+}
+
+.card.card-depth-5 {
+  box-shadow: var(--shadow-5);
+}
+```
