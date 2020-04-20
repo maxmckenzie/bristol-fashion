@@ -1,5 +1,16 @@
-.typeScale(@scale) {
-  @font-scale: if((@scale < 0), @base-font-size / @base-font-ratio, @base-font-size * @scale);
-  font-size:  @font-scale;
+.typeScale(@scale) when (@scale = 0) {
+  font-size: @base-font-size;
+  line-height: @base-font-size * @base-font-ratio;
+}
+
+.typeScale(@scale) when (@scale > 0) {
+  @font-scale: (@base-font-size * @base-font-ratio) * @scale;
+  font-size: @font-scale;
+  line-height: @font-scale * @base-font-ratio;
+}
+
+.typeScale(@scale) when (@scale < 0) {
+  @font-scale: @base-font-size / @base-font-ratio;
+  font-size: @font-scale;
   line-height: @font-scale * @base-font-ratio;
 }
