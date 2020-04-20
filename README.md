@@ -39,6 +39,6 @@ If you are new to web development/design and need some guidance, we suggest taki
 
 To learn the fundamentals of design UI check out https://refactoringui.com/ 
 
-### If you like you can upvote it on product hunt
+### If you like you can upvote this project on product hunt
 
 <a href="https://www.producthunt.com/posts/bristol-fashion?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bristol-fashion" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=194030&theme=light" alt="Bristol Fashion - Design system to keep web UI ship shape and Bristol fashion | Product Hunt Embed"/></a>
