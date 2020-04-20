@@ -5,12 +5,14 @@
 
 .typeScale(@scale) when (@scale > 0) {
   @font-scale: (@base-font-size * @base-font-ratio) * @scale;
+
   font-size: @font-scale;
   line-height: @font-scale * @base-font-ratio;
 }
 
 .typeScale(@scale) when (@scale < 0) {
   @font-scale: @base-font-size / @base-font-ratio;
+
   font-size: @font-scale;
   line-height: @font-scale * @base-font-ratio;
 }
