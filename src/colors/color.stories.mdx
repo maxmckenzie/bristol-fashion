@@ -1,0 +1,69 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+import { colorPalette } from './color-variables.less';
+
+<Meta title="1. Docs/Colors" />
+
+# Colors
+
+Set of default colors and tones named by brand vs. UI usage. We don't offer color name variables such as `--color-blue`.
+
+we offer a couple of default brand colors which you should overwrite
+
+```
+/* overwrite bristol css defaults */
+:root {
+  --color-brand-primary:hsl(262, 52%, 47%);
+  --color-brand-secondary:hsl(231, 48%, 48%);
+}
+```
+
+The rest are UI and a single set of neutrals. We have 9 versions that allow for tints from 100 light to 900 dark.
+
+> If you want to add more to this you can in your stylesheet check out https://www.materialui.co/colors
+
+```
+--color-neutral-100:rgb(245,245,245);
+--color-neutral-200:rgb(238,238,238);
+--color-neutral-300:rgb(224,224,224);
+--color-neutral-400:rgb(189,189,189);
+--color-neutral-500:rgb(158,158,158);
+--color-neutral-600:rgb(117,117,117);
+--color-neutral-700:rgb(97,97,97);
+--color-neutral-800:rgb(66,66,66);
+--color-neutral-900:rgb(33,33,33);
+```
+
+You can use these tints in your CSS to create your custom elements
+
+```
+.my-button {
+  color: var(--color-ui-success-100);
+  background-color: var(--color-ui-success-500);
+  border:1px solid var(--color-ui-success-900);
+}
+```
+
+## vars
+
+```
+--color-brand-primary
+--color-brand-secondary
+
+--color-neutral-{1-900}
+
+--color-ui-success-{1-900}
+--color-ui-error-{1-900}
+--color-ui-danger-{1-900} // alias for error
+--color-ui-warning-{1-900}
+--color-ui-info-{1-900}
+```
+
+You can add any you like as a css variable. CSS variables are super handy and you should use them.
+
+:root {
+  --color-my-color:
+}
+
+We suggest keeping everything prepended with `--color-` to make sure you keep them isolated from any other css variables that may be in use.
+
+> Have a look at this excellent article https://refactoringui.com/previews/building-your-color-palette/ for more about using colors
