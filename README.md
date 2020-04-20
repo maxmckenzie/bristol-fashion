@@ -2,7 +2,7 @@
 
 Documentation: https://bristol-fashion.now.sh/
 
-Bristol fashion, AKA Bristol for short (but some other dude already took that npm repo). It is a collection of custom made design system utilities, rather than providing developers with a UI framework such as Bootstrap and Foundation. Bristol provides the utilities you need to make your own based on design theory and a little bit of maths.
+Bristol fashion is a collection of design system utilities and default, rather than providing developers with a UI framework such as Bootstrap and Foundation. Bristol provides the utilities you need to roll your own based around core design theory and a little bit of maths.
 
 ## Install
 
