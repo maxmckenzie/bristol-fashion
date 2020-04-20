@@ -6,7 +6,7 @@ Bristol fashion, AKA Bristol for short (but some other dude already took that np
 
 You can include just the CDN if you would like to https://bristol-fashion.now.sh/styles.css
 
-Including this in your head will include all of the CSS and all of the browser defaults that come with it
+Including this in your head will include all of the CSS and all of the browser defaults that come with it.
 
 ```
 <link rel="stylesheet" href="https://bristol-fashion.now.sh/styles.css">
@@ -18,7 +18,7 @@ or `yarn add bristol-fashion` or `npm i bristol-fashion` depending on your prefe
 
 - normalize.css
 - Typography utility for type scale calculation and browser defaults
-- Color CSS variables broken down into Brand, Pallet, neutral, and UI
+- Color CSS variables are broken down into Brand, Pallet, neutral, and UI
 - Inset and drop shadow defaults
 
 ### ToDo
@@ -31,6 +31,6 @@ or `yarn add bristol-fashion` or `npm i bristol-fashion` depending on your prefe
 
 ## Fantastic design resources
 
-If you are new to web development/design and need some guidance we suggest taking a look at this fantastic guide https://www.internetingishard.com/
+If you are new to web development/design and need some guidance, we suggest taking a look at this fantastic guide https://www.internetingishard.com/
 
 To learn the fundamentals of design UI check out https://refactoringui.com/ 
