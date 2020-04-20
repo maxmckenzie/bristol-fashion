@@ -1,0 +1,62 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="2. Examples/React" />
+
+# Example using React
+
+install 
+
+```
+npm i bristol-fashion
+```
+
+then import the css file from your app.js/jsx
+
+CSS
+
+```
+import React, { Suspense, lazy } from 'react';
+import ReactDOM from 'react-dom';
+
+import 'bristol-fashion/src/index.css'
+
+```
+
+Less
+
+```
+import React, { Suspense, lazy } from 'react';
+import ReactDOM from 'react-dom';
+
+import 'bristol-fashion/src/index.less'
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root'),
+);
+
+
+```
+
+Sass/Scss
+```
+import React, { Suspense, lazy } from 'react';
+import ReactDOM from 'react-dom';
+
+import 'bristol-fashion/src/index.scss'
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root'),
+);
+
+```
+
+You can also include jsut the type scale function is you want as well
+
+```
+import React, { Suspense, lazy } from 'react';
+import ReactDOM from 'react-dom';
+
+import "bristol-fashion/src/typography/typography-functions.less";
+```
