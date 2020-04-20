@@ -1,0 +1,39 @@
+@import './typography-variables.less';
+@import './typography-functions.less';
+
+h1 {
+  margin: @type-margin;
+  .typeScale(2.25);
+}
+
+h2 {
+  margin: @type-margin;
+  .typeScale(2);
+}
+
+h3 {
+  margin: @type-margin;
+  .typeScale(1.5);
+}
+
+h4 {
+  margin: @type-margin;
+  .typeScale(1.25);
+}
+
+h5 {
+  margin: @type-margin;
+  .typeScale(1);
+}
+
+p,
+.text {
+  margin: @type-margin;
+  .typeScale(0);
+}
+
+.textSmall,
+caption {
+  margin: @type-margin;
+  .typeScale(-1);
+}

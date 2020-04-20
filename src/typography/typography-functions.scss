@@ -1,0 +1,18 @@
+@mixin typeScale($type-scale: 0) {
+  @if ($type-scale == 0) {
+    font-size: $base-font-size;
+    line-height: $base-font-size * $base-font-ratio;
+  }
+
+  @if $type-scale > 0 {  
+    $font-scale: ($base-font-size * $base-font-ratio) * $type-scale;
+    font-size: $font-scale;
+    line-height: $font-scale * $base-font-ratio;
+  }
+
+  @if $type-scale < 0 {  
+    $font-scale: $base-font-size / $base-font-ratio;
+    font-size: $font-scale;
+    line-height: $font-scale * $base-font-ratio;
+  }
+}

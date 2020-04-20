@@ -1,0 +1,65 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import './typography.less'
+
+<Meta title="1. Docs/Typography" />
+
+# Typography
+
+<Preview>
+  <Story name="Type Scale">
+    <div>
+      <h1>Lorem ipsum dolor</h1>
+      <h2>Lorem ipsum dolor</h2>
+      <h3>Lorem ipsum dolor</h3>
+      <h4>Lorem ipsum dolor</h4>
+      <h5>Lorem ipsum dolor</h5>
+      <p>Body</p>
+      <span class="textSmall">Small text</span><br/>
+      <caption>Caption</caption>
+    </div>
+  </Story>
+</Preview>
+
+# Usage
+
+As well as being included in the minified full bristol.css file you can import just the variables, functions and or browser default 
+
+Browser defaults (include variables and functions)
+
+built CSS
+```
+@import "bristol-fashion/lib/typography.css";
+```
+
+or you can include the utilities and overwrite the variables with your own
+
+yourFile.less
+```
+:root {
+  font-size: 16px;
+}
+
+@base-font-size: 1rem;
+@base-font-ratio: 1.25; // major second
+@type-margin: 0;
+
+@import "bristol-fashion/lib/typography-functions.less";
+@import "bristol-fashion/lib/typography.less";
+
+```
+
+yourFile.scss
+```
+:root {
+  font-size: 16px;
+}
+
+@base-font-size: 1rem;
+@base-font-ratio: 1.25; // major second
+@type-margin: 0;
+
+@import "bristol-fashion/lib/typography-functions.scss";
+@import "bristol-fashion/lib/typography.scss";
+
+```
