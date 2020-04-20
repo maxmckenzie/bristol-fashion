@@ -4,19 +4,21 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # Example using React
 
-install 
+Install 
 
 ```
 npm i bristol-fashion
 ```
 
-then import the css file from your app.js/jsx
+Then import the css file into your app.js/jsx
 
 CSS
 
 ```
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
+
+import App from './App'
 
 import 'bristol-fashion/src/index.css'
 
@@ -27,6 +29,8 @@ Less
 ```
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
+
+import App from './App'
 
 import 'bristol-fashion/src/index.less'
 
@@ -43,6 +47,8 @@ Sass/Scss
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
 
+import App from './App'
+
 import 'bristol-fashion/src/index.scss'
 
 ReactDOM.render(
@@ -52,11 +58,14 @@ ReactDOM.render(
 
 ```
 
-You can also include jsut the type scale function is you want as well
+You can also include just the type scale functions to use in your app
 
 ```
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
 
+import App from './App'
+
 import "bristol-fashion/src/typography/typography-functions.less";
+
 ```
