@@ -29,4 +29,8 @@ or `yarn add bristol-fashion` or `npm i bristol-fashion` depending on your prefe
 - [ ] Stylus support
 - [ ] Flexbox grid and spacing (HTML classes)
 
-> Despite being called Bristol, the spelling is international English as that's how computers talk and documentation walks. Not UK English and despite my want to also not in Bristolian. I may well for a laugh translate the docs into Bristolian. But let's get something working first ay!
+## Fantastic design resources
+
+If you are new to web development/design and need some guidance we suggest taking a look at this fantastic guide https://www.internetingishard.com/
+
+To learn the fundamentals of design UI check out https://refactoringui.com/ 
