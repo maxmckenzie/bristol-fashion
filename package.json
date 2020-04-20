@@ -10,7 +10,7 @@
     "build": "npm run build:docs && npm run build:styles",
     "build:docs": "build-storybook --docs",
     "build:storybook": "build-storybook",
-    "build:styles": "lessc src/index.less storybook-static/styles.css",
+    "build:styles": "lessc src/index.less storybook-static/styles.css -x",
     "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
