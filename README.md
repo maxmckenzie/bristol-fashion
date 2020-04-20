@@ -1,5 +1,7 @@
 <img src="https://raw.githubusercontent.com/maxmckenzie/bristol-fashion/master/src/images/logo.png" alt="Bristol fashion logo" width="250" height="250">
 
+Documentation: https://bristol-fashion.now.sh/
+
 Bristol fashion, AKA Bristol for short (but some other dude already took that npm repo). It is a collection of custom made design system utilities, rather than providing developers with a UI framework such as Bootstrap and Foundation. Bristol provides the utilities you need to make your own based on design theory and a little bit of maths.
 
 ## Install
