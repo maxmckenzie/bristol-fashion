@@ -12,7 +12,7 @@
     "build:storybook": "build-storybook",
     "build:styles": "lessc src/index.less storybook-static/styles.css -x",
     "stylelint": "stylelint 'src/**/*.less'",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook --docs -p 6006"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",

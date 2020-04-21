@@ -3,6 +3,8 @@ import { addDecorator, addParameters } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 import { DocsPage } from 'storybook-addon-deps/blocks';
 
+import '../src/storybook.less'
+
 addParameters({
   options: {
     showRoots: true,
