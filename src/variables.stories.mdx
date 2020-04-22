@@ -1,0 +1,85 @@
+import { Meta, Story, Preivew } from '@storybook/addon-docs/blocks';
+import variables from './images/variables.svg';
+
+<Meta title="2. Variables/About" />
+
+# About Variables
+
+We all know and love CSS3 variables, They can be loaded once and used across the website. Esspecially handy if your using a framework like react or vue. This library provides a set of common defaults in a sensible namespace.
+
+<img src={variables} width="400px" />
+
+For colors `--brand--{type}`, `--ui-{feedback}-{tone}`, and `--neutral-{tone}`, and For shadows `--shadow-{depth}` i.e `--shadow-1` `--shadow-2` and used as inset and drop shadow
+
+```
+box-shadow: var(--shadow-1);
+box-shadow: inset var(--shadow-1);
+``` 
+
+These can be overwritten and extended as you like
+
+## Variables reference
+
+```
+--color-brand-primary
+--color-brand-secondary
+--color-neutral-100
+--color-neutral-200
+--color-neutral-300
+--color-neutral-400
+--color-neutral-500
+--color-neutral-600
+--color-neutral-700
+--color-neutral-800
+--color-neutral-900
+--color-ui-success-100
+--color-ui-success-200
+--color-ui-success-300
+--color-ui-success-400
+--color-ui-success-500
+--color-ui-success-600
+--color-ui-success-700
+--color-ui-success-800
+--color-ui-success-900
+--color-ui-error-100
+--color-ui-error-200
+--color-ui-error-300
+--color-ui-error-400
+--color-ui-error-500
+--color-ui-error-600
+--color-ui-error-700
+--color-ui-error-800
+--color-ui-error-900
+--color-ui-danger-100
+--color-ui-danger-200
+--color-ui-danger-300
+--color-ui-danger-400
+--color-ui-danger-500
+--color-ui-danger-600
+--color-ui-danger-700
+--color-ui-danger-800
+--color-ui-danger-900
+--color-ui-warning-100
+--color-ui-warning-200
+--color-ui-warning-300
+--color-ui-warning-400
+--color-ui-warning-500
+--color-ui-warning-600
+--color-ui-warning-700
+--color-ui-warning-800
+--color-ui-warning-900
+--color-ui-info-100
+--color-ui-info-200
+--color-ui-info-300
+--color-ui-info-400
+--color-ui-info-500
+--color-ui-info-600
+--color-ui-info-700
+--color-ui-info-800
+--color-ui-info-900
+
+--shadow-1
+--shadow-2
+--shadow-3
+--shadow-4
+```
