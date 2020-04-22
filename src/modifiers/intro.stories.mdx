@@ -1,0 +1,25 @@
+import { Meta, Story, Preivew } from '@storybook/addon-docs/blocks';
+
+<Meta title="3. Modifiers/About" />
+
+# About Modifiers
+
+Modifiers provide a set of default classes that can be used with in html templates. To avoid calshing with other classes and or frameworks that may be in use in the same project as Bristol fashion. The modifiers have `_` prepended to them.
+
+These can then be used in html
+
+```
+<div class="_content-center">
+  <!--content-->
+</div>
+```
+
+Or if you perfer you can use them as a mixin in Less
+
+```
+.element {
+  ._content-center;
+}
+```
+
+With Sass/Scss you unfortunatly cannot pull in classes as mixins like this.

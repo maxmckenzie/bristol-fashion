@@ -2,24 +2,25 @@ import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
 
 import './typography.less'
 
-<Meta title="1. Docs/Typography" />
+<Meta title="4. Utilities/Typography" />
 
-# Typography
+# WIP: Typography
 
-As well as being included in the minified full bristol.css file you can import just the variables, functions and or browser default. 
+> This is a work in pregress you can use the browser default styles, but the functions could do with some more work.
 
-> Just including the CSS from the cdn this provides you a set of defaults for h1, h2, h3 etc. there are also two additional classes of `.textSmall` `.textTiny`.
+Just including the CSS from the cdn this provides you a set of defaults for h1, h2, h3 etc. there are also two additional classes of `.textSmall` `.textTiny`.
 
-Browser defaults (include variables and functions)
+You can also import just the variables, functions and or browser defaults as a utility into your scss or less files. 
 
-built CSS
+To include browser defaults, variables and functions)
+
 ```
 @import "bristol-fashion/src/typography/typography.css";
 ```
 
-or you can include the utilities and overwrite the variables with your own
+Include just the utilities and overwrite the variables with your own.
 
-yourFile.less
+yourFile.[less|scss]
 ```
 :root {
   font-size: 16px;
@@ -29,22 +30,7 @@ yourFile.less
 @base-font-ratio: 1.25; // major second
 @type-margin: 0;
 
-@import "bristol-fashion/src/typography/typography-functions.less";
-@import "bristol-fashion/src/typography/typography.less";
-
-```
-
-yourFile.scss
-```
-:root {
-  font-size: 16px;
-}
-
-@base-font-size: 1rem;
-@base-font-ratio: 1.25; // major second
-@type-margin: 0;
-
-@import "bristol-fashion/src/typography/typography-functions.scss";
-@import "bristol-fashion/src/typography/typography.scss";
+@import "bristol-fashion/src/typography/typography-functions.[less|scss]";
+@import "bristol-fashion/src/typography/typography.[less|scss]";
 
 ```
