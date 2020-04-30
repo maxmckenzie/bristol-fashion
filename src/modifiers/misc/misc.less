@@ -1,7 +1,57 @@
-._is\:hidden {
-  visibility: hidden;
+@import '../../variables/breakpoints.less';
+
+._is-hidden {
+  &\:all {
+    visibility: hidden;
+  }
+
+  &\:xs {
+    .xs({
+      visibility: hidden;
+    });
+  }
+
+  &\:sm {
+    .sm({
+      visibility: hidden;
+    });
+  }
+
+  &\:md {
+    .md({
+      visibility: hidden;
+    });
+  }
+
+  &\:lg {
+    .lg({
+      visibility: hidden;
+    });
+  }
+
+  &\:xl {
+    .xl({
+      visibility: hidden;
+    });
+  }
+
+  &\:xxl {
+    .xxl({
+      visibility: hidden;
+    });
+  }
+
+  &\:xxxl {
+    .xxxl({
+      visibility: hidden;
+    });
+  }
 }
 
-._is\:visible {
+._is-visible {
   visibility: visible;
+
+  &\:xs {
+    visibility: hidden;
+  }
 }

@@ -12,6 +12,8 @@ The syntax of modifiers in bristol is `_utility-name:property(value)`
 - property: top, bottom, left, right
 - value: auto, 0-9
 
+Colors are not included in the modifiers section. They may be added in the future. The problem comes with apply the colour to the background or border etc. Additionaly if we difine these with their tones such as neutral in the HTML it makes switching these problematic. We suggest you do use them for you project but as part of you design vocabulary such as `._color:text(primary)` and `._color:text(secondary)` You can then apply borders and background to panels/cards etc.
+
 export const parentStyle = {
   backgroundColor: 'rgb(207,216,220)',
   height: '7rem',
