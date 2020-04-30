@@ -2,7 +2,7 @@
 
 Documentation: https://bristol-fashion.now.sh/
 
-Bristol fashion is a collection of design system utilities and default, rather than providing developers with a UI framework such as Bootstrap and Foundation. Bristol provides the utilities you need to roll your own based around core design theory and a little bit of maths.
+Bristol fashion is a collection of design system variables and modifiers and default, rather than providing developers with a UI framework such as Bootstrap and Foundation. Bristol provides the variables and modifiers you need to roll your own based around core design theory.
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/maxmckenzie/bristol-fashion/lint?style=flat-square) ![npm](https://img.shields.io/npm/v/bristol-fashion?style=flat-square)
 
@@ -23,6 +23,7 @@ or `yarn add bristol-fashion` or `npm i bristol-fashion` depending on your prefe
 - normalize.css
 - Typography utility for type scale calculation and browser defaults
 - Color CSS variables are broken down into Brand, Pallet, neutral, and UI
+- Modifier classes with `._`
 - Inset and drop shadow modifiers
 - Text size modifiers
 - Visibility modifiers

@@ -4,15 +4,15 @@ import { Meta, Story, Preivew } from '@storybook/addon-docs/blocks';
 
 # About Modifiers
 
-Modifiers provide a set of default classes that can be used within html templates. To avoid calshing with other classes and or frameworks that may be in use in the same project as Bristol fashion. The modifiers have `_` prepended to them.
+Modifiers provide a set of default classes that can be used within HTML templates. To avoid clashing with other classes and or frameworks that may be in use in the same project as Bristol fashion. The modifiers start with `_`.
 
 The syntax of modifiers in bristol is `_utility-name:property(value)`
 
-- utility: main namespace such as flex, text, content, align
+- utility: main name space such as flex, text, content, align
 - property: top, bottom, left, right
 - value: auto, 0-9
 
-Colors are not included in the modifiers section. They may be added in the future. The problem comes with apply the colour to the background or border etc. Additionaly if we difine these with their tones such as neutral in the HTML it makes switching these problematic. We suggest you do use them for you project but as part of you design vocabulary such as `._color:text(primary)` and `._color:text(secondary)` You can then apply borders and background to panels/cards etc.
+Colors are not included in the modifiers section. They may be added in the future. The problem comes with apply the color to the background or border etc. Additionally if we define these with their tones such as neutral in the HTML it makes switching these problematic. We suggest you do use them for you project but as part of you design vocabulary such as `._color:text(primary)` and `._color:text(secondary)` You can then apply borders and background to panels/cards etc.
 
 export const parentStyle = {
   backgroundColor: 'rgb(207,216,220)',
@@ -46,7 +46,7 @@ import './content/content.less'
   }}
 </Story>
 
-These can then be used in html
+These can then be used in HTML
 
 ```
 <div class="_content-center">
@@ -54,7 +54,7 @@ These can then be used in html
 </div>
 ```
 
-Or if you perfer you can use them as a mixin in Less
+Or if you prefer you can use them as a mixin in Less
 
 ```
 .element {
@@ -62,7 +62,7 @@ Or if you perfer you can use them as a mixin in Less
 }
 ```
 
-With Sass/Scss you unfortunatly cannot pull in classes as mixins like this.
+With Sass/Scss you unfortunately cannot pull in classes as mixins like this.
 
 ## Modifiers Reference
 
@@ -96,8 +96,22 @@ With Sass/Scss you unfortunatly cannot pull in classes as mixins like this.
 ._flex-row-reverse
 ._flex-wrap
 ._flex-wrap-reverse
-._is-hidden
-._is-visible
+._is-hidden:all
+._is-visible:all
+._is-hidden:xs
+._is-visible:xs
+._is-hidden:sm
+._is-visible:sm
+._is-hidden:md
+._is-visible:md
+._is-hidden:lg
+._is-visible:lg
+._is-hidden:xl
+._is-visible:xl
+._is-hidden:xxl
+._is-visible:xxl
+._is-hidden:xxxl
+._is-visible:xxxl
 ._text:xs
 ._text:sm
 ._text:md
