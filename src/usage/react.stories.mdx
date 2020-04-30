@@ -1,8 +1,8 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 
-<Meta title="5. Examples/Vue" />
+<Meta title="5. Usage/React" />
 
-# Example using Vue
+# Example using React
 
 Install 
 
@@ -15,48 +15,55 @@ Then import the css file into your app.js/jsx
 CSS
 
 ```
-import Vue from 'vue';
+import React, { Suspense, lazy } from 'react';
+import ReactDOM from 'react-dom';
+
 import App from './App'
 
 import 'bristol-fashion/src/index.css'
-
-const app = new Vue({
-  render: h => h(App)
-}).$mount('#app');
 
 ```
 
 Less
 
 ```
-import Vue from 'vue';
+import React, { Suspense, lazy } from 'react';
+import ReactDOM from 'react-dom';
+
 import App from './App'
 
 import 'bristol-fashion/src/index.less'
 
-const app = new Vue({
-  render: h => h(App)
-}).$mount('#app');
+ReactDOM.render(
+  <App />,
+  document.getElementById('root'),
+);
 
 
 ```
 
 Sass/Scss
 ```
-import Vue from 'vue';
+import React, { Suspense, lazy } from 'react';
+import ReactDOM from 'react-dom';
+
 import App from './App'
 
 import 'bristol-fashion/src/index.scss'
 
-const app = new Vue({
-  render: h => h(App)
-}).$mount('#app');
+ReactDOM.render(
+  <App />,
+  document.getElementById('root'),
+);
+
 ```
 
 You can also include just the type scale functions to use in your app
 
 ```
-import Vue from 'vue';
+import React, { Suspense, lazy } from 'react';
+import ReactDOM from 'react-dom';
+
 import App from './App'
 
 import "bristol-fashion/src/typography/typography-functions.less";
