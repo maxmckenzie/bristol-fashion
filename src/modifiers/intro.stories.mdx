@@ -6,6 +6,12 @@ import { Meta, Story, Preivew } from '@storybook/addon-docs/blocks';
 
 Modifiers provide a set of default classes that can be used within html templates. To avoid calshing with other classes and or frameworks that may be in use in the same project as Bristol fashion. The modifiers have `_` prepended to them.
 
+The syntax of modifiers in bristol is `_utility-name:property(value)`
+
+- utility: main namespace such as flex, text, content, align
+- property: top, bottom, left, right
+- value: auto, 0-9
+
 export const parentStyle = {
   backgroundColor: 'rgb(207,216,220)',
   height: '7rem',
@@ -23,7 +29,7 @@ export const childStyle = {
   lineHeight: '1',
 }
 
-import './content.less'
+import './content/content.less'
 
 <Story name="Default">
   {() => {
@@ -56,32 +62,32 @@ Or if you perfer you can use them as a mixin in Less
 
 With Sass/Scss you unfortunatly cannot pull in classes as mixins like this.
 
-## Reference
+## Modifiers Reference
 
 ```
-._align-left
-._align-right
-._align-center
-._align-middle
-._align-baseline
-._align-top
-._align-bottom
-._align-sub
-._align-text
-._align-text-top
+._align:left
+._align:right
+._align:center
+._align:middle
+._align:baseline
+._align:top
+._align:bottom
+._align:sub
+._align:text
+._align:text-top
 ._content-center
-._content-center-x
-._content-center-y
-._content-align-top
-._content-align-bottom
-._content-align-left
-._content-align-right
-._content-space-between-x
-._content-space-between-y
-._content-space-around-x
-._content-space-around-y
-._content-stretch-x
-._content-stretch-y
+._content-center:x
+._content-center:y
+._content-align:top
+._content-align:bottom
+._content-align:left
+._content-align:right
+._content-space-between:x
+._content-space-between:y
+._content-space-around:x
+._content-space-around:y
+._content-stretch:x
+._content-stretch:y
 ._flex-column
 ._flex-row
 ._flex-column-reverse
@@ -90,4 +96,36 @@ With Sass/Scss you unfortunatly cannot pull in classes as mixins like this.
 ._flex-wrap-reverse
 ._is-hidden
 ._is-visible
+._text:xs
+._text:sm
+._text:md
+// no value needed for base font size
+._text:lg
+._text:xl
+._text:xxl
+._text:xxxl
+._m(0-5|auto)
+._m:x(0-5|auto)
+._m:y(0-5|auto)
+._m:left(0-5|auto)
+._m:right(0-5|auto)
+._m:top(0-5|auto)
+._m:bottom(0-5|auto)
+._p(0-5|auto)
+._p:x(0-5|auto)
+._p:y(0-5|auto)
+._p:left(0-5|auto)
+._p:right(0-5|auto)
+._p:top(0-5|auto)
+._p:bottom(0-5|auto)
+._shadow(1)
+._shadow(2)
+._shadow(3)
+._shadow(4)
+._shadow(5)
+._shadow:inset(1)
+._shadow:inset(2)
+._shadow:inset(3)
+._shadow:inset(4)
+._shadow:inset(5)
 ```

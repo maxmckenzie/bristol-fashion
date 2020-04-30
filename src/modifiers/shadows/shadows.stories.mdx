@@ -1,0 +1,61 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="3. Modifiers/Shadows" />
+
+# Shadows
+
+```
+._shadow(1)
+._shadow(2)
+._shadow(3)
+._shadow(4)
+._shadow(5)
+._shadow:inset(1)
+._shadow:inset(2)
+._shadow:inset(3)
+._shadow:inset(4)
+._shadow:inset(5)
+```
+
+export const parentStyle = {
+  backgroundColor: 'rgb(207,216,220)',
+  height: '5rem',
+  width: '5rem',
+  padding: '0.5rem',
+  margin: '0 2rem 2rem 0',
+  display: 'inline-flex'
+}
+
+import './shadows.less'
+
+## Box Shadow
+
+<Story name="Default">
+  {() => {
+    return (
+      <div>
+        <div style={parentStyle} className="_shadow(1)"/>
+        <div style={parentStyle} className="_shadow(2)"/>
+        <div style={parentStyle} className="_shadow(3)"/>
+        <div style={parentStyle} className="_shadow(4)"/>
+        <div style={parentStyle} className="_shadow(5)"/>
+      </div>
+    )
+  }}
+</Story>
+
+## inset Shadow
+
+<Story name="inset">
+  {() => {
+    return (
+      <div>
+        <div style={parentStyle} className="_shadow:inset(1)"/>
+        <div style={parentStyle} className="_shadow:inset(2)"/>
+        <div style={parentStyle} className="_shadow:inset(3)"/>
+        <div style={parentStyle} className="_shadow:inset(4)"/>
+        <div style={parentStyle} className="_shadow:inset(5)"/>
+      </div>
+    )
+  }}
+</Story>

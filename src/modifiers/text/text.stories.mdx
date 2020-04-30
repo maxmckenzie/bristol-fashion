@@ -1,0 +1,38 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+
+<Meta title="3. Modifiers/Text" />
+
+# Text
+
+Utilities for vertical alignment and text-alignment, careful not to be confused with content alignment. This will work on text and images but possibly not on some child elements
+
+```
+._text:xs
+._text:sm
+._text:md
+// no value needed for base font size
+._text:lg
+._text:xl
+._text:xxl
+._text:xxxl
+```
+
+import './text.less'
+
+<Story name="Default">
+  {() => {
+    return (
+      <div>
+        <div className="_text:xxxl">Lorem ispum dollar sit amet</div>
+        <div className="_text:xxl">Lorem ispum dollar sit amet</div>
+        <div className="_text:xl">Lorem ispum dollar sit amet</div>
+        <div className="_text:lg">Lorem ispum dollar sit amet</div>
+        <div className="_text:md">Lorem ispum dollar sit amet</div>
+        <div>Lorem ispum dollar sit amet</div>
+        <div className="_text:sm">Lorem ispum dollar sit amet</div>
+        <div className="_text:xs">Lorem ispum dollar sit amet</div>
+      </div>
+    )
+  }}
+</Story>
+

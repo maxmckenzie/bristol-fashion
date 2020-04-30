@@ -7,15 +7,15 @@ import { Meta, Story, Preivew } from '@storybook/addon-docs/blocks';
 Utilities for vertical alignment and text-alignment, careful not to be confused with content alignment. This will work on text and images but possibly not on some child elements
 
 ```
-._align-left
-._align-right
-._align-center
-._align-middle
-._align-baseline
-._align-top
-._align-bottom
-._align-sub
-._align-text-top
+._align:left
+._align:right
+._align:center
+._align:middle
+._align:baseline
+._align:top
+._align:bottom
+._align:sub
+._align:text-top
 ```
 
 import './alignment.less'
@@ -34,38 +34,36 @@ export const childStyle = {
   fontSize: '0.85rem'
 }
 
-import './content.less'
-
 <Story name="Default">
   {() => {
     return (
       <div>
-        <p style={parentStyle} class="_align-left">
-          _align-left
+        <p style={parentStyle} class="_align:left">
+          _align:left
         </p>
-        <p style={parentStyle} class="_align-right">
-          _align-right
+        <p style={parentStyle} class="_align:right">
+          _align:right
         </p>
-        <p style={parentStyle} class="_align-center">
-          _align-center
-        </p>
-        <p style={parentStyle}>
-          <span>_align</span><span style={childStyle} class="_align-middle">-middle</span>
+        <p style={parentStyle} class="_align:center">
+          _align:center
         </p>
         <p style={parentStyle}>
-          <span>_align</span><span style={childStyle} class="_align-baseline">-baseline</span>
+          <span>_align</span><span style={childStyle} class="_align:middle">:middle</span>
         </p>
         <p style={parentStyle}>
-          <span>_align</span><span style={childStyle} class="_align-top">-top</span>
+          <span>_align</span><span style={childStyle} class="_align:baseline">:baseline</span>
         </p>
         <p style={parentStyle}>
-          <span>_align</span><span style={childStyle} class="_align-bottom">-bottom</span>
+          <span>_align</span><span style={childStyle} class="_align:top">:top</span>
         </p>
         <p style={parentStyle}>
-          <span>_align</span><span style={childStyle} class="_align-sub">-sub</span>
+          <span>_align</span><span style={childStyle} class="_align:bottom">:bottom</span>
         </p>
         <p style={parentStyle}>
-          <span>_align</span><span style={childStyle} class="_align-text-top">-text-top</span>
+          <span>_align</span><span style={childStyle} class="_align:sub">:sub</span>
+        </p>
+        <p style={parentStyle}>
+          <span>_align</span><span style={childStyle} class="_align:text-top">:text-top</span>
         </p>
       </div>
     )
