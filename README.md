@@ -23,15 +23,12 @@ or `yarn add bristol-fashion` or `npm i bristol-fashion` depending on your prefe
 - normalize.css
 - Typography utility for type scale calculation and browser defaults
 - Color CSS variables are broken down into Brand, Pallet, neutral, and UI
-- Inset and drop shadow defaults
-
-### ToDo
-
-- [ ] local dev with yalc
-- [ ] Auto color tone calculation
-- [ ] Less and Sass Support
-- [ ] Stylus support
-- [ ] Flexbox grid and spacing (HTML classes)
+- Inset and drop shadow modifiers
+- Text size modifiers
+- Visibility modifiers
+- Content modifiers
+- Image modifiers
+- Spacing modifiers
 
 ## Design resources
 
@@ -39,6 +36,6 @@ If you are new to web development/design and need some guidance, we suggest taki
 
 To learn the fundamentals of design UI check out https://refactoringui.com/ 
 
-### If you like you can upvote this project on product hunt
+### If you like you can up-vote this project on product hunt
 
 <a href="https://www.producthunt.com/posts/bristol-fashion?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bristol-fashion" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=194030&theme=light" alt="Bristol Fashion - Design system to keep web UI ship shape and Bristol fashion | Product Hunt Embed"/></a>
