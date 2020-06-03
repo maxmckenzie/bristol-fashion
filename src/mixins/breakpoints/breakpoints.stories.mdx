@@ -1,0 +1,56 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="4. Mixins/Breakpoints" />
+
+# Breakpoints
+
+Less mixin for different view port widths. to be used inside a less file only with 
+
+`@import 'node_modules/bristol-fashion/src/mixins/breakpoints/breakpoints.less';`
+
+after this you will have the following available.
+
+```
+.xs({});
+.sm({});
+.md({});
+.lg({});
+.xl({});
+.xxl({});
+.xxxl({});
+```
+
+if you want to over write the defaults just state the variables in less.
+
+```
+@import 'node_modules/bristol-fashion/src/mixins/breakpoints/breakpoints.less';
+
+@xs: 320px;
+@sm: 20rem;
+@md: 30rem;
+@lg: 60rem;
+@xl: 90rem;
+@xxl: 120rem;
+@xxxl: 200rem;
+
+// The new values will be used from this point onwards in your styles
+
+```
+
+```
+.xs({
+  // my extra small styles
+});
+```
+
+Styles are inherited upwards and if you have made the interface mobile first you should have a structure somethign like.
+
+```
+.thing {
+  // styles at all screen sizes
+  .lg({
+    // styles when the screen is wider that 150rem
+  });
+}
+
+```

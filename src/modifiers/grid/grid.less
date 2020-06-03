@@ -1,0 +1,116 @@
+@import '../../mixins/breakpoints/breakpoints.less';
+
+@columns: 12;
+@gutter-width: var(--gw);
+@gutter-width-half: calc(var(--gw) / 2);
+
+._grid {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+
+._grid._nogutter {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 !important;
+}
+
+.gencolumns(@columns; @index: 1) when (@index =< @columns) {
+  .gencolumns(@columns; (@index + 1));
+
+  ._col\(@{index}\) {
+    width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
+    margin: calc(var(--gw) / 2);
+  }
+  ._col\(@{index}\)._nogutter {
+    margin: 0 !important;
+    width: calc(calc(100% / @columns * @index)) !important;
+  }
+
+  @media screen and (max-width: @xs) {
+    ._col\:xs\(@{index}\) {
+      width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
+      margin: calc(var(--gw) / 2);
+    }
+    ._col\:xs\(@{index}\)._nogutter {
+      margin: 0 !important;
+      width: calc(calc(100% / @columns * @index)) !important;
+    }
+  }
+
+  @media screen and (min-width: @sm) {
+    ._col\:sm\(@{index}\) {
+      width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
+      margin: calc(var(--gw) / 2);
+    }
+    ._col\:sm\(@{index}\)._nogutter {
+      margin: 0 !important;
+      width: calc(calc(100% / @columns * @index)) !important;
+    }
+  }
+
+  @media screen and (min-width: @md) {
+    ._col\:md\(@{index}\) {
+      width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
+      margin: calc(var(--gw) / 2);
+    }
+    ._col\:md\(@{index}\)._nogutter {
+      margin: 0 !important;
+      width: calc(calc(100% / @columns * @index)) !important;
+    }
+  }
+
+  @media screen and (min-width: @lg) {
+    ._col\:lg\(@{index}\) {
+      width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
+      margin: calc(var(--gw) / 2);
+    }
+    ._col\:lg\(@{index}\)._nogutter {
+      margin: 0 !important;
+      width: calc(calc(100% / @columns * @index)) !important;
+    }
+  }
+
+  @media screen and (min-width: @xl) {
+    ._col\:xl\(@{index}\) {
+      width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
+      margin: calc(var(--gw) / 2);
+    }
+    ._col\:xl\(@{index}\)._nogutter {
+      margin: 0 !important;
+      width: calc(calc(100% / @columns * @index)) !important;
+    }
+  }
+
+  @media screen and (min-width: @xxl) {
+    ._col\:xxl\(@{index}\) {
+      width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
+      margin: calc(var(--gw) / 2);
+    }
+    ._col\:xxl\(@{index}\)._nogutter {
+      margin: 0 !important;
+      width: calc(calc(100% / @columns * @index)) !important;
+    }
+  }
+
+  @media screen and (min-width: @xxxl) {
+    ._col\:xxxl\(@{index}\) {
+      width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
+      margin: calc(var(--gw) / 2);
+    }
+    ._col\:xxxl\(@{index}\)._nogutter {
+      margin: 0 !important;
+      width: calc(calc(100% / @columns * @index)) !important;
+    }
+  }
+}
+
+[class^='_col'],
+[class*=' _col'] {
+  display: flex;
+}
+
+.gencolumns(@columns);

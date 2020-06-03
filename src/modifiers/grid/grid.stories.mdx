@@ -1,0 +1,121 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="3. Modifiers/Grid" />
+
+# Grid
+
+The grid allows you to add modifiers to HTML to define column widths at different device screen sizes. 
+You can use this grid with a compilation of the content and alignment modifiers to achieve the layout you desire.
+
+```
+._grid
+._col(0-12) // defaults for all sizes
+._col:xs(0-12) // 320 px and down for tiny devices
+._col:sm(0-12)
+._col:md(0-12)
+._col:lg(0-12)
+._col:xl(0-12)
+._col:xxl(0-12)
+```
+
+The sizes are set in CSS with min-width: So if you do not set any width for say xxl but only set it for md then it will inherit from the md col width you have defined.
+
+If you wanted it to be two columns on mobile all the way up you can just define `_col(6)` on both dom elements
+
+export const parentStyle = {
+  backgroundColor: 'rgb(207,216,220)',
+  height: '7rem',
+}
+
+export const childStyle = {
+  backgroundColor: 'rgb(55,71,79)',
+  color: 'rgb(207,216,220)',
+  borderRadius: '0.25rem',
+  fontFamily: '"Noto serif", sans-serif',
+  lineHeight: '1',
+}
+export const grandChildStyle = {
+  backgroundColor: 'rgb(245,245,245)',
+  color: 'black',
+  borderRadius: '0.25rem'
+}
+
+import './grid.less'
+
+## Default usage
+
+<Preview>
+  <Story name="Default">
+    {() => {
+      return (
+        <div className="_grid" style={parentStyle}>
+          <div className="_col(3)" style={grandChildStyle} style={childStyle}>_col(3)</div>
+          <div className="_col(3)" style={childStyle}>_col(3)</div>
+          <div className="_col(3)" style={childStyle}>_col(3)</div>
+          <div className="_col(3)" style={childStyle}>_col(3)</div>
+          <div className="_col(3)" style={childStyle}>_col(3)</div>
+          <div className="_col(3)" style={childStyle}>_col(3)</div>
+          <div className="_col(3)" style={childStyle}>_col(3)</div>
+          <div className="_col(3)" style={childStyle}>_col(3)</div>
+        </div>
+      )
+    }}
+  </Story>  
+</Preview>
+
+
+## No Gutter
+
+You can remove the gutter with the class `_nogutter`
+
+<Preview>
+  <Story name="nogutter">
+    {() => {
+      return (
+        <div className="_grid _nogutter" style={parentStyle}>
+          <div className="_col(6) _nogutter" style={childStyle}>
+            <div class="_col(4) _nogutter" style={grandChildStyle}>
+              _col(4) inside _col(6)
+            </div>
+            <div class="_col(4) _nogutter" style={grandChildStyle}>
+              _col(4) inside _col(6)
+            </div>
+            <div class="_col(4) _nogutter" style={grandChildStyle}>
+              _col(4) inside _col(6)
+            </div>
+          </div>
+          <div className="_col(6) _nogutter" style={childStyle}>_col(6)</div>
+        </div>
+      )
+    }}
+  </Story>
+</Preview>
+
+## Nesting Columns
+
+You can nest columns inside of each other with ease.
+
+> NOTE! To achieve a satisfiable set of nested elements each col is set to dispaly inline-flex. When you add content to a _col it will align flex row, If you want a vertical layout of the elements, such as text, either make those elements full width, or apply the modifier `_flex-column`
+
+<Preview>
+  <Story name="nested">
+    {() => {
+      return (
+        <div className="_grid" style={parentStyle}>
+          <div className="_col(6)" style={childStyle}>
+            <div class="_col(4)" style={grandChildStyle}>
+              _col(4) inside _col(6)
+            </div>
+            <div class="_col(4)" style={grandChildStyle}>
+              _col(4) inside _col(6)
+            </div>
+            <div class="_col(4)" style={grandChildStyle}>
+              _col(4) inside _col(6)
+            </div>
+          </div>
+          <div className="_col(6)" style={childStyle}><div>_col(6)</div> <div>_col(6)</div></div>
+        </div>
+      )
+    }}
+  </Story>
+</Preview>

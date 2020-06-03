@@ -1,0 +1,49 @@
+@xs: 320px;
+@sm: 20rem;
+@md: 30rem;
+@lg: 60rem;
+@xl: 90rem;
+@xxl: 120rem;
+@xxxl: 200rem;
+
+.xs(@rules) {
+  @media screen and (max-width: @xs) {
+    @rules();
+  }
+}
+
+.sm(@rules) {
+  @media screen and (min-width: @sm) {
+    @rules();
+  }
+}
+
+.md(@rules) {
+  @media screen and (min-width: @md) {
+    @rules();
+  }
+}
+
+.lg(@rules) {
+  @media screen and (min-width: @lg) {
+    @rules();
+  }
+}
+
+.xl(@rules) {
+  @media screen and (min-width: @xl) {
+    @rules();
+  }
+}
+
+.xxl(@rules) {
+  @media screen and (min-width: @xxl) {
+    @rules();
+  }
+}
+
+.xxxl(@rules) {
+  @media screen and (min-width: @xxxl) {
+    @rules();
+  }
+}
