@@ -1,9 +1,7 @@
 @import '../../mixins/breakpoints/breakpoints.less';
 
 ._is-hidden {
-  &\:all {
-    visibility: hidden;
-  }
+  visibility: hidden;
 
   &\:xs {
     .xs({
@@ -52,6 +50,44 @@
   visibility: visible;
 
   &\:xs {
-    visibility: hidden;
+    .xs({
+      visibility: visible;
+    });
+  }
+
+  &\:sm {
+    .sm({
+      visibility: visible;
+    });
+  }
+
+  &\:md {
+    .md({
+      visibility: visible;
+    });
+  }
+
+  &\:lg {
+    .lg({
+      visibility: visible;
+    });
+  }
+
+  &\:xl {
+    .xl({
+      visibility: visible;
+    });
+  }
+
+  &\:xxl {
+    .xxl({
+      visibility: visible;
+    });
+  }
+
+  &\:xxxl {
+    .xxxl({
+      visibility: visible;
+    });
   }
 }
