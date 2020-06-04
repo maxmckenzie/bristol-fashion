@@ -73,7 +73,7 @@ You can remove the gutter with the class `_nogutter`
     {() => {
       return (
         <div className="_grid _nogutter" style={parentStyle}>
-          <div className="_col(6) _nogutter" style={childStyle}>
+          <div className="_col(6) _nogutter _grid" style={childStyle}>
             <div class="_col(4) _nogutter" style={grandChildStyle}>
               _col(4) inside _col(6)
             </div>
@@ -95,14 +95,12 @@ You can remove the gutter with the class `_nogutter`
 
 You can nest columns inside of each other with ease.
 
-> NOTE! To achieve a satisfiable set of nested elements each col is set to dispaly inline-flex. When you add content to a _col it will align flex row, If you want a vertical layout of the elements, such as text, either make those elements full width, or apply the modifier `_flex-column`
-
 <Preview>
   <Story name="nested">
     {() => {
       return (
         <div className="_grid" style={parentStyle}>
-          <div className="_col(6)" style={childStyle}>
+          <div className="_col(6) _grid" style={childStyle}>
             <div class="_col(4)" style={grandChildStyle}>
               _col(4) inside _col(6)
             </div>
