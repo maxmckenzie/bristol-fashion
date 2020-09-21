@@ -11,6 +11,19 @@
   margin: 0 -0.5rem;
 }
 
+._grid-inline {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+
+  > [class^='_col'],
+  > [class*=' _col'] {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}
+
 ._grid._nogutter {
   box-sizing: border-box;
   display: flex;
@@ -21,27 +34,16 @@
 .gencolumns(@columns; @index: 1) when (@index =< @columns) {
   .gencolumns(@columns; (@index + 1));
 
-  ._col\(@{index}\) {
+  ._col\:xs\(@{index}\) {
     width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
     margin: calc(var(--gw) / 2);
   }
-  ._col\(@{index}\)._nogutter {
+  ._col\:xs\(@{index}\)._nogutter {
     margin: 0 !important;
     width: calc(calc(100% / @columns * @index)) !important;
   }
 
-  @media screen and (max-width: @xs) {
-    ._col\:xs\(@{index}\) {
-      width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
-      margin: calc(var(--gw) / 2);
-    }
-    ._col\:xs\(@{index}\)._nogutter {
-      margin: 0 !important;
-      width: calc(calc(100% / @columns * @index)) !important;
-    }
-  }
-
-  @media screen and (min-width: @sm) {
+  @media screen and (min-width: 20rem) {
     ._col\:sm\(@{index}\) {
       width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
       margin: calc(var(--gw) / 2);
@@ -52,7 +54,7 @@
     }
   }
 
-  @media screen and (min-width: @md) {
+  @media screen and (min-width: 40rem) {
     ._col\:md\(@{index}\) {
       width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
       margin: calc(var(--gw) / 2);
@@ -63,7 +65,7 @@
     }
   }
 
-  @media screen and (min-width: @lg) {
+  @media screen and (min-width: 60rem) {
     ._col\:lg\(@{index}\) {
       width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
       margin: calc(var(--gw) / 2);
@@ -74,7 +76,7 @@
     }
   }
 
-  @media screen and (min-width: @xl) {
+  @media screen and (min-width: 90rem) {
     ._col\:xl\(@{index}\) {
       width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
       margin: calc(var(--gw) / 2);
@@ -85,7 +87,7 @@
     }
   }
 
-  @media screen and (min-width: @xxl) {
+  @media screen and (min-width: 120rem) {
     ._col\:xxl\(@{index}\) {
       width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
       margin: calc(var(--gw) / 2);
@@ -96,7 +98,7 @@
     }
   }
 
-  @media screen and (min-width: @xxxl) {
+  @media screen and (min-width: 200rem) {
     ._col\:xxxl\(@{index}\) {
       width: calc(calc(100% / @columns * @index) - calc(var(--gw)));
       margin: calc(var(--gw) / 2);
