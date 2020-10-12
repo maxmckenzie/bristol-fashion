@@ -1,49 +1,77 @@
-@xs: 320px;
-@sm: 20rem;
-@md: 30rem;
-@lg: 60rem;
-@xl: 90rem;
-@xxl: 120rem;
-@xxxl: 200rem;
-
 .xs(@rules) {
-  @media screen and (max-width: @xs) {
+  @media screen and (max-width: 30rem) {
+    @rules();
+  }
+}
+
+.xs-only(@rules) {
+  @media screen and (max-width: 30rem) {
     @rules();
   }
 }
 
 .sm(@rules) {
-  @media screen and (min-width: @sm) {
+  @media screen and (min-width: 30rem) {
+    @rules();
+  }
+}
+
+.sm-only(@rules) {
+  @media screen and (min-width: 30rem) and (max-width: 40rem) {
     @rules();
   }
 }
 
 .md(@rules) {
-  @media screen and (min-width: @md) {
+  @media screen and (min-width: 40rem) {
+    @rules();
+  }
+}
+
+.md-only(@rules) {
+  @media screen and (min-width: 40rem) and (max-width: 80rem) {
     @rules();
   }
 }
 
 .lg(@rules) {
-  @media screen and (min-width: @lg) {
+  @media screen and (min-width: 80rem) {
+    @rules();
+  }
+}
+
+.lg-only(@rules) {
+  @media screen and (min-width: 80rem) and (max-width: 105rem) {
     @rules();
   }
 }
 
 .xl(@rules) {
-  @media screen and (min-width: @xl) {
+  @media screen and (min-width: 105rem) {
+    @rules();
+  }
+}
+
+.xl-only(@rules) {
+  @media screen and (min-width: 105rem) and (max-width: 120rem) {
     @rules();
   }
 }
 
 .xxl(@rules) {
-  @media screen and (min-width: @xxl) {
+  @media screen and (min-width: 120rem) {
+    @rules();
+  }
+}
+
+.xxl-only(@rules) {
+  @media screen and (min-width: 120rem) and (max-width: 200rem) {
     @rules();
   }
 }
 
 .xxxl(@rules) {
-  @media screen and (min-width: @xxxl) {
+  @media screen and (min-width: 200rem) {
     @rules();
   }
 }

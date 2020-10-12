@@ -1,93 +1,50 @@
 @import '../../mixins/breakpoints/breakpoints.less';
 
 ._is-hidden {
-  visibility: hidden;
+  &\:all {
+    display: none;
+  }
 
   &\:xs {
-    .xs({
-      visibility: hidden;
+    .xs-only({
+      display: none;
     });
   }
 
   &\:sm {
-    .sm({
-      visibility: hidden;
+    .sm-only({
+      display: none;
     });
   }
 
   &\:md {
-    .md({
-      visibility: hidden;
+    .md-only({
+      display: none;
     });
   }
 
   &\:lg {
-    .lg({
-      visibility: hidden;
+    .lg-only({
+      display: none;
     });
   }
 
   &\:xl {
-    .xl({
-      visibility: hidden;
+    .xl-only({
+      display: none;
     });
   }
 
   &\:xxl {
-    .xxl({
-      visibility: hidden;
+    .xxl-only({
+      display: none;
     });
   }
 
   &\:xxxl {
     .xxxl({
-      visibility: hidden;
+      display: none;
     });
   }
 }
 
-._is-visible {
-  visibility: visible;
-
-  &\:xs {
-    .xs({
-      visibility: visible;
-    });
-  }
-
-  &\:sm {
-    .sm({
-      visibility: visible;
-    });
-  }
-
-  &\:md {
-    .md({
-      visibility: visible;
-    });
-  }
-
-  &\:lg {
-    .lg({
-      visibility: visible;
-    });
-  }
-
-  &\:xl {
-    .xl({
-      visibility: visible;
-    });
-  }
-
-  &\:xxl {
-    .xxl({
-      visibility: visible;
-    });
-  }
-
-  &\:xxxl {
-    .xxxl({
-      visibility: visible;
-    });
-  }
-}
