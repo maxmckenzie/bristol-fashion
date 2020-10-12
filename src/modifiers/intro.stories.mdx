@@ -31,15 +31,15 @@ export const childStyle = {
   lineHeight: '1',
 }
 
-import './content/content.less'
+import './flex/flex.less'
 
 <Story name="Default">
   {() => {
     return (
       <div>
-        <div style={parentStyle} class="_content-center">
-          <div style={childStyle}>_content-center</div>
-          <div style={childStyle}>_content-center</div>
+        <div style={parentStyle} class="_flex:column">
+          <div style={childStyle}>_flex:column</div>
+          <div style={childStyle}>_flex:column</div>
         </div>
       </div>
     )

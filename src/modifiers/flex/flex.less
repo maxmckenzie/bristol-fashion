@@ -1,3 +1,103 @@
+*[class^="_flex"],
+*[class*="_flex"] {
+  display: flex;
+}
+
+._flex\:column {
+  flex-direction: column;
+}
+
+._flex\:column-reverse {
+  flex-direction: column-reverse;
+}
+
+._flex\:row {
+  flex-direction: row;
+}
+
+._flex\:row-reverse {
+  flex-direction: row-reverse;
+}
+
+._flex\:nowrap {
+  flex-wrap: nowrap;
+}
+
+._flex\:wrap {
+  flex-wrap: wrap;
+}
+
+._flex\:center {
+  justify-content: center;
+  align-items: center;
+}
+
+._flex\:wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+._flex\:justify\(start\) {
+  justify-content: flex-start;
+}
+
+._flex\:justify\(end\) {
+  justify-content: flex-end;
+}
+
+._flex\:justify\(center\) {
+  justify-content: center;
+}
+
+._flex\:justify\(space-around\) {
+  justify-content: space-around;
+}
+
+._flex\:justify\(space-between\) {
+  justify-content: space-between;
+}
+
+._flex\:align\(stretch\) {
+  align-items: stretch;
+}
+
+._flex\:align\(start\) {
+  align-items: flex-start;
+}
+
+._flex\:align\(end\) {
+  align-items: flex-end;
+}
+
+._flex\:align\(center\) {
+  align-items: center;
+}
+
+._flex\:wrap\(stretch\) {
+  align-content: stretch;
+}
+
+._flex\:wrap\(start\) {
+  align-content: flex-start;
+}
+
+._flex\:wrap\(end\) {
+  align-content: flex-end;
+}
+
+._flex\:wrap\(center\) {
+  align-content: center;
+}
+
+._flex\:wrap\(space-around\) {
+  align-content: space-around;
+}
+
+._flex\:wrap\(space-between\) {
+  align-content: space-around;
+}
+
+// Legacy content modifers
+
 ._content-center {
   display: flex;
   justify-content: center;
@@ -31,13 +131,13 @@
   align-items: flex-end;
 }
 
-._content-align\:left {
+._content-align\:right {
   display: flex;
   align-items: baseline;
   justify-content: flex-end;
 }
 
-._content-align\:right {
+._content-align\:left {
   display: flex;
   align-items: baseline;
   justify-content: flex-start;

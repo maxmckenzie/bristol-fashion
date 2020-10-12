@@ -1,0 +1,264 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="3. Modifiers/Flex" />
+
+## Flex layout modifiers
+
+Utility CSS classes for flex box. `._flex` includes flex property applied `._flex:column` or `._flex:row` to change default row in browser. Make sure to apply these to the parent container.
+
+```css
+._flex
+._flex:column
+._flex:column-reverse
+._flex:row
+._flex:row-reverse
+._flex:nowrap
+._flex:wrap
+._flex:wrap-reverse
+._flex:center
+._flex:justify(start)
+._flex:justify(end)
+._flex:justify(center)
+._flex:justify(space-around)
+._flex:justify(space-between)
+._flex:align(stretch)
+._flex:align(start)
+._flex:align(end)
+._flex:align(center)
+._flex:wrap(stretch)
+._flex:wrap(start)
+._flex:wrap(end)
+._flex:wrap(center)
+._flex:wrap(space-around)
+._flex:wrap(space-between)
+```
+
+These are designed to be used as classes in HTML `<div class="_flex:column"><!--content--></div>`
+
+import './flex.less'
+
+export const parentStyle = {
+  backgroundColor: 'rgb(55,71,79)',
+  minHeight: '10rem',
+  padding: '0.5rem',
+  margin: '0 0 1rem'
+}
+
+export const childStyle = {
+  backgroundColor: 'rgb(245,245,245)',
+  margin: '0.25rem',
+  padding: '0.5rem',
+  color: 'var(--grey-100)',
+  borderRadius: '0.25rem',
+  fontFamily: '"Noto serif", sans-serif',
+  lineHeight: '1',
+}
+
+<Preview>
+  <div>
+    <h2>_flex</h2>
+    <div style={parentStyle} class="_flex">
+      <div style={childStyle}>_flex</div>
+      <div style={childStyle}>_flex</div>
+    </div>
+    <h2>_flex:column</h2>
+    <div style={parentStyle} class="_flex:column">
+      <div style={childStyle}>_flex:column 1</div>
+      <div style={childStyle}>_flex:column 2</div>
+    </div>
+    <h2>_flex:column-reverse</h2>
+    <div style={parentStyle} class="_flex:column-reverse">
+      <div style={childStyle}>_flex:column-reverse 1</div>
+      <div style={childStyle}>_flex:column-reverse 2</div>
+    </div>
+    <h2>_flex:row</h2>
+    <div style={parentStyle} class="_flex:row">
+      <div style={childStyle}>_flex:row 1</div>
+      <div style={childStyle}>_flex:row 2</div>
+    </div>
+    <h2>_flex:row-reverse</h2>
+    <div style={parentStyle} class="_flex:row-reverse">
+      <div style={childStyle}>_flex:row-reverse 1</div>
+      <div style={childStyle}>_flex:row-reverse 2</div>
+    </div>
+    <h2>_flex:nowrap</h2>
+    <div style={parentStyle} class="_flex:nowrap">
+      <div style={childStyle}>_flex:nowrap 1</div>
+      <div style={childStyle}>_flex:nowrap 2</div>
+      <div style={childStyle}>_flex:nowrap 3</div>
+      <div style={childStyle}>_flex:nowrap 4</div>
+      <div style={childStyle}>_flex:nowrap 5</div>
+      <div style={childStyle}>_flex:nowrap 6</div>
+      <div style={childStyle}>_flex:nowrap 7</div>
+      <div style={childStyle}>_flex:nowrap 8</div>
+      <div style={childStyle}>_flex:nowrap 9</div>
+      <div style={childStyle}>_flex:nowrap 10</div>
+      <div style={childStyle}>_flex:nowrap 11</div>
+      <div style={childStyle}>_flex:nowrap 12</div>
+    </div>
+    <h2>_flex:wrap</h2>
+    <div style={parentStyle} class="_flex:wrap">
+      <div style={childStyle}>_flex:wrap 1</div>
+      <div style={childStyle}>_flex:wrap 2</div>
+      <div style={childStyle}>_flex:wrap 3</div>
+      <div style={childStyle}>_flex:wrap 4</div>
+      <div style={childStyle}>_flex:wrap 5</div>
+      <div style={childStyle}>_flex:wrap 6</div>
+      <div style={childStyle}>_flex:wrap 7</div>
+      <div style={childStyle}>_flex:wrap 8</div>
+      <div style={childStyle}>_flex:wrap 9</div>
+      <div style={childStyle}>_flex:wrap 10</div>
+      <div style={childStyle}>_flex:wrap 11</div>
+      <div style={childStyle}>_flex:wrap 12</div>
+    </div>
+    <h2>_flex:wrap-reverse</h2>
+    <div style={parentStyle} class="_flex:wrap-reverse">
+      <div style={childStyle}>_flex:wrap-reverse 1</div>
+      <div style={childStyle}>_flex:wrap-reverse 2</div>
+      <div style={childStyle}>_flex:wrap-reverse 3</div>
+      <div style={childStyle}>_flex:wrap-reverse 4</div>
+      <div style={childStyle}>_flex:wrap-reverse 5</div>
+      <div style={childStyle}>_flex:wrap-reverse 6</div>
+      <div style={childStyle}>_flex:wrap-reverse 7</div>
+      <div style={childStyle}>_flex:wrap-reverse 8</div>
+      <div style={childStyle}>_flex:wrap-reverse 9</div>
+      <div style={childStyle}>_flex:wrap-reverse 10</div>
+    </div>
+    <h2>_flex:center</h2>
+    <div style={parentStyle} class="_flex:center">
+      <div style={childStyle}>_flex:center</div>
+      <div style={childStyle}>_flex:center</div>
+    </div>
+    <h2>_flex:justify(start)</h2>
+    <div style={parentStyle} class="_flex:justify(start)">
+      <div style={childStyle}>_flex:justify(start)</div>
+      <div style={childStyle}>_flex:justify(start)</div>
+    </div>
+    <h2>_flex:justify(end)</h2>
+    <div style={parentStyle} class="_flex:justify(end)">
+      <div style={childStyle}>_flex:justify(end)</div>
+      <div style={childStyle}>_flex:justify(end)</div>
+    </div>
+    <h2>_flex:justify(center)</h2>
+    <div style={parentStyle} class="_flex:justify(center)">
+      <div style={childStyle}>_flex:justify(center)</div>
+      <div style={childStyle}>_flex:justify(center)</div>
+    </div>
+    <h2>_flex:justify(space-around)</h2>
+    <div style={parentStyle} class="_flex:justify(space-around)">
+      <div style={childStyle}>_flex:justify(space-around)</div>
+      <div style={childStyle}>_flex:justify(space-around)</div>
+    </div>
+    <h2>_flex:justify(space-between)</h2>
+    <div style={parentStyle} class="_flex:justify(space-between)">
+      <div style={childStyle}>_flex:justify(space-between)</div>
+      <div style={childStyle}>_flex:justify(space-between)</div>
+    </div>
+    <h2>_flex:align(stretch)</h2>
+    <div style={parentStyle} class="_flex:align(stretch)">
+      <div style={childStyle}>_flex:align(stretch)</div>
+      <div style={childStyle}>_flex:align(stretch)</div>
+    </div>
+    <h2>_flex:align(start)</h2>
+    <div style={parentStyle} class="_flex:align(start)">
+      <div style={childStyle}>_flex:align(start)</div>
+      <div style={childStyle}>_flex:align(start)</div>
+    </div>
+    <h2>_flex:align(end)</h2>
+    <div style={parentStyle} class="_flex:align(end)">
+      <div style={childStyle}>_flex:align(end)</div>
+      <div style={childStyle}>_flex:align(end)</div>
+    </div>
+    <h2>_flex:align(center)</h2>
+    <div style={parentStyle} class="_flex:align(center)">
+      <div style={childStyle}>_flex:align(center)</div>
+      <div style={childStyle}>_flex:align(center)</div>
+    </div>
+    <h2>_flex:wrap(stretch) <small>Must be used with <code>flex:wrap</code> or <code>flex:wrap-reverse</code></small></h2>
+    <div style={parentStyle} class="_flex:wrap _flex:wrap(stretch)">
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+      <div style={childStyle}>_flex:wrap(stretch)</div>
+    </div>
+    <h2>_flex:wrap(start) <small>Must be used with <code>flex:wrap</code> or <code>flex:wrap-reverse</code></small></h2>
+    <div style={parentStyle} class="_flex:wrap _flex:wrap(start)">
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+      <div style={childStyle}>_flex:wrap(start)</div>
+    </div>
+    <h2>_flex:wrap(end) <small>Must be used with <code>flex:wrap</code> or <code>flex:wrap-reverse</code></small></h2>
+    <div style={parentStyle} class="_flex:wrap _flex:wrap(end)">
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+      <div style={childStyle}>_flex:wrap(end)</div>
+    </div>
+    <h2>_flex:wrap(center) <small>Must be used with <code>flex:wrap</code> or <code>flex:wrap-reverse</code></small></h2>
+    <div style={parentStyle} class="_flex:wrap _flex:wrap(center)">
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+      <div style={childStyle}>_flex:wrap(center)</div>
+    </div>
+    <h2>_flex:wrap(space-around) <small>Must be used with <code>flex:wrap</code> or <code>flex:wrap-reverse</code></small></h2>
+    <div style={parentStyle} class="_flex:wrap _flex:wrap(space-around)">
+      <div style={childStyle}>_flex:wrap(space-around)</div>
+      <div style={childStyle}>_flex:wrap(space-around)</div>
+      <div style={childStyle}>_flex:wrap(space-around)</div>
+      <div style={childStyle}>_flex:wrap(space-around)</div>
+      <div style={childStyle}>_flex:wrap(space-around)</div>
+      <div style={childStyle}>_flex:wrap(space-around)</div>
+      <div style={childStyle}>_flex:wrap(space-around)</div>
+      <div style={childStyle}>_flex:wrap(space-around)</div>
+    </div>
+    <h2>_flex:wrap(space-between) <small>Must be used with <code>flex:wrap</code> or <code>flex:wrap-reverse</code></small></h2>
+    <div style={parentStyle} class="_flex:wrap _flex:wrap(space-between)">
+      <div style={childStyle}>_flex:wrap(space-between)</div>
+      <div style={childStyle}>_flex:wrap(space-between)</div>
+      <div style={childStyle}>_flex:wrap(space-between)</div>
+      <div style={childStyle}>_flex:wrap(space-between)</div>
+      <div style={childStyle}>_flex:wrap(space-between)</div>
+      <div style={childStyle}>_flex:wrap(space-between)</div>
+      <div style={childStyle}>_flex:wrap(space-between)</div>
+      <div style={childStyle}>_flex:wrap(space-between)</div>
+    </div>
+  </div>
+</Preview>
