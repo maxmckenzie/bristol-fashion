@@ -45,7 +45,7 @@
     "npm": ">=5"
   },
   "dependencies": {
-    "less": "^3.12.2",
+    "less": "^3.13.1",
     "less-loader": "^7.0.2",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.3",
