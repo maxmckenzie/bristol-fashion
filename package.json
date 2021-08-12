@@ -15,7 +15,7 @@
     "storybook": "start-storybook --docs -p 6006"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.6",
+    "@babel/cli": "^7.14.8",
     "@babel/core": "^7.14.8",
     "@babel/node": "^7.14.7",
     "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
